@@ -1,7 +1,7 @@
-package kg.attractor.java;
+package kg.attractor.java.homework.domain;
 
-// import static java.util.stream.Collectors.*;
-// import static java.util.Comparator.*;
+ import static java.util.stream.Collectors.*;
+ import static java.util.Comparator.*;
 
 // используя статические imports
 // мы импортируем *всё* из Collectors и Comparator.
@@ -27,7 +27,8 @@ public class Main {
 //        squared.forEach(System.out::println);
 
 
-
+        var orders = RestaurantOrders.read("orders_100.json").getOrders();
+        orders.forEach(Order::printAllItems);
 
         // это для домашки
         // выберите любое количество заказов, какое вам нравится.

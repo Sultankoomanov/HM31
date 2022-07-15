@@ -1,9 +1,7 @@
-package kg.attractor.java.homework.util;
+package kg.attractor.java.homework.domain;
 
 import com.google.gson.Gson;
-import kg.attractor.java.homework.domain.Item;
 import kg.attractor.java.homework.domain.Customer;
-import kg.attractor.java.homework.domain.Order;
 
 import java.io.IOException;
 import java.nio.file.Files;

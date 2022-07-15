@@ -58,5 +58,16 @@ public class Item {
     //------   Реализация ваших методов должна быть ниже этой линии   ------
     //----------------------------------------------------------------------
 
+    public double getTotalPrice() {
+        return price*amount;
+    }
 
+    @Override
+    public String toString() {
+        return String.format("%s, %s, %s, %s, %s", name, type, price, amount, getTotalPriceAmount());
+    }
+
+    public double getTotalPriceAmount() {
+        return price*amount;
+    }
 }

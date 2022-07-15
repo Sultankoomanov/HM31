@@ -1,4 +1,4 @@
-package kg.attractor.java.homework.util;
+package kg.attractor.java.homework.domain;
 
 public class NotImplementedException extends RuntimeException {
     public NotImplementedException() {

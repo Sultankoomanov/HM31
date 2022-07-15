@@ -1,6 +1,6 @@
 package kg.attractor.java.homework.domain;
 
-import kg.attractor.java.homework.util.NotImplementedException;
+
 
 import java.util.List;
 import java.util.Objects;
@@ -54,8 +54,19 @@ public class Order {
     //----------------------------------------------------------------------
 
 
+    public double calculateTotal() {
+      return items.stream()
+                .mapToDouble(Item::getTotalPriceAmount)
+                .sum();
+//        throw new NotImplementedException("Вам надо реализовать этот метод!");
+    }
 
-    public void calculateTotal() {
-        throw new NotImplementedException("Вам надо реализовать этот метод!");
+    public void printAllItems() {
+        System.out.println("Customer: " + customer.getFullName());
+        System.out.println("------------------------------------------------------");
+        System.out.print("Name |  Type |  Price Amount |   Total price\n");
+        items.stream().map(Item::toString).forEach(System.out::println);
+        System.out.println("Total: " + String.format("%.2f",calculateTotal()));
+        System.out.println();
     }
 }

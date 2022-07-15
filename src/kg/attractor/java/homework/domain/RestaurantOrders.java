@@ -1,7 +1,6 @@
-package kg.attractor.java.homework;
+package kg.attractor.java.homework.domain;
 
 import com.google.gson.Gson;
-import kg.attractor.java.homework.domain.Order;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -42,4 +41,6 @@ public class RestaurantOrders {
     // для решения заданий из домашки :)
     // вы можете добавлять все необходимые imports
     //
+
+//    public List<Order> get
 }
